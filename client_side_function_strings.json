@@ -1,5 +1,7 @@
 {
-    "MIC_NAME": "USB Device 0x46d:0x89d: Audio (hw:1,0)",
+    "MIC_NAME": ["USB Device 0x46d:0x89d: Audio (hw:1,0)",
+        "whatever microphone name you've got"
+    ],
     "SWEAR_WORDS": [
         "fuck",
         "shit",
