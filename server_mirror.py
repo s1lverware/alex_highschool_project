@@ -26,14 +26,14 @@ import importlib.util
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
 
-JSON_FILE_OF_STRINGS = "/home/pi/Desktop/yb_project_smart_mirror/mirror_server_side/server_side_function_strings.json"
+JSON_FILE_OF_STRINGS = "insert here the location of the JSON file. must be in the same dir as server_mirror.py"
 DICT_OF_STRINGS = None
 
 TRANSLATOR = Translator()
 
 OPTIONS = webdriver.ChromeOptions()
 OPTIONS.add_argument("headless")
-BROWSER = webdriver.Chrome('/usr/lib/chromium-browser/chromedriver', options=OPTIONS)
+BROWSER = webdriver.Chrome('/usr/lib/chromium-browser/chromedriver', options=OPTIONS) # change webdriver for different OS
 
 class server_class():
     def __init__(self, encrypter):
@@ -497,7 +497,7 @@ def answering_loop(server, service):
 def setting_up_the_server():
     """ The function sets up the server by importing the encryption module, connecting to the google API and creating the server instance. It returns the encryption object, the server object and service. """
     start_time = time.time()
-    encryption_object = module_from_file("encryption_object", "/home/pi/Desktop/yb_project_smart_mirror/encryption_object.py")
+    encryption_object = module_from_file("encryption_object", "/home/pi/Desktop/encryption_object.py") # change dir if needed
     encrypter = encryption_object.enc_dec()
     server = server_class(encrypter)
     server.create_server_socket()
