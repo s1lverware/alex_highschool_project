@@ -44,11 +44,13 @@ class client_class():
         self.my_socket.connect((self.host, self.port))
 
     def send_message(self, text):
-        """ The function recievs a string that needs to be sent to the server. It encrypts it, encodes it and sends it to the server. """
+        """ The function recievs a string that needs to be sent to the server. 
+        It encrypts it, encodes it and sends it to the server. """
         self.my_socket.send(self.encrypter.encrypt_message(text))
 
     def receive_message(self):
-        """ The function waits for the server to send an answer. It then recieves it, decrypts it, and decodes it. Later, it returns the result. """
+        """ The function waits for the server to send an answer. It then recieves it, 
+        decrypts it, and decodes it. Later, it returns the result. """
         return self.encrypter.decrypt_message(self.my_socket.recv(1024))
 
     def close_client(self):
@@ -57,7 +59,8 @@ class client_class():
 
 class alex_main_window(QMainWindow):
     def __init__(self, client):
-        """ The function creates an instance of the class, and calls init_UI, that sets up the window. """
+        """ The function creates an instance of the class, 
+        and calls init_UI, that sets up the window. """
         super(alex_main_window, self).__init__()
         self.title = "I'm Alex"
 
@@ -81,7 +84,7 @@ class alex_main_window(QMainWindow):
 
         self.clock_window = QLCDNumber(self)
 
-        self.json_file_of_main_strings = "/home/pi/Desktop/yb_project_smart_mirror/mirror_client_side/client_side_function_strings.json"
+        self.json_file_of_main_strings = "/home/pi/Desktop/client_side_function_strings.json" # change dir if needed
         self.dict_of_main_strings = None
 
         self.init_UI()
@@ -202,11 +205,13 @@ class alex_main_window(QMainWindow):
         return "".join(new_text)
 
     def remove_apostrophe(self, text):
-        """ This function removes apostrophes from the text. This has to be done because of the way the speaking function is coded. """
+        """ This function removes apostrophes from the text. 
+        This has to be done because of the way the speaking function is coded. """
         return text.replace(r"'", "")
 
     def speak(self, text):
-        """ The function checks that the alarm isn't on, that the text isn't None or "waiting", checks to see if new lines are needed, places them if nessecary, writes the text to a text box and speaks the text. """
+        """ The function checks that the alarm isn't on, that the text isn't None or "waiting", 
+        checks to see if new lines are needed, places them if nessecary, writes the text to a text box and speaks the text. """
         while self.playing_alarm:
             pass
         self.is_speaking = True
@@ -223,7 +228,9 @@ class alex_main_window(QMainWindow):
         self.is_speaking = False
 
     def listen(self):
-        """ The function listens to the user through the mic we want. After it hears speaking, it sends the audio to a google API for speech recognition, recieves the transcribed text, and returns it to the user. """
+        """ The function listens to the user through the mic we want. After it hears speaking, 
+        it sends the audio to a google API for speech recognition, recieves the transcribed text, 
+        and returns it to the user. """
         r = sr.Recognizer()
         with sr.Microphone(device_index=self.the_one_and_only_mic) as source:
             r.adjust_for_ambient_noise(source, duration=1)
@@ -236,7 +243,8 @@ class alex_main_window(QMainWindow):
                 return ""
 
     def check_for_wake_phrase(self, text):
-        """ The function recives a string and checks if someone addressed Alex. If true, it returns True. Else, it returns False. """
+        """ The function recives a string and checks if someone addressed Alex. 
+        If true, it returns True. Else, it returns False. """
         for phrase in self.dict_of_main_strings['WAKE_PHRASE']:
             if phrase in text:
                 return True
@@ -315,13 +323,14 @@ class alex_main_window(QMainWindow):
 
     def rickroll(self):
         """ The function plays a song for 15 seconds. """
-        player = vlc.MediaPlayer('/home/pi/Music/rickroll_but_it_never_starts.mp3')
+        player = vlc.MediaPlayer('/home/pi/Music/rickroll_but_it_never_starts.mp3') # change the sounds to your liking
         player.play()
         time.sleep(15)
         player.stop()
 
     def get_last_said(self, text):
-        """ The function recieves text, checks if it matches the catagory of lst_said. If it does, then it says the last said string. Else, is does nothing. """
+        """ The function recieves text, checks if it matches the catagory of lst_said. 
+        If it does, then it says the last said string. Else, is does nothing. """
         for phrase in self.dict_of_main_strings['LAST_SAID_STRINGS']:
             if phrase in text:
                 self.did_something = True
@@ -330,21 +339,24 @@ class alex_main_window(QMainWindow):
                 self.speak(None)
 
     def turn_the_light_on(self, text):
-        """ The function recieves text and checks if the text matches the catagory. If so, it changes color scheme. Else, it doesn't. """
+        """ The function recieves text and checks if the text matches the catagory. 
+        If so, it changes color scheme. Else, it doesn't. """
         for phrase in self.dict_of_main_strings['LIGHT_ON_TEXT']:
             if phrase in text:
                 self.did_something = True
                 self.turn_light_on()
 
     def turn_the_light_off(self, text):
-        """ The function recieves text and checks if the text matches the catagory. If so, it changes color scheme. Else, it doesn't. """
+        """ The function recieves text and checks if the text matches the catagory. 
+        If so, it changes color scheme. Else, it doesn't. """
         for phrase in self.dict_of_main_strings['LIGHT_OFF_TEXT']:
             if phrase in text:
                 self.did_something = True
                 self.turn_light_off()
 
     def check_basics(self, text):
-        """ This function checks the basic functions of the client and answers "thank you", "sorry" and "how are you". """
+        """ This function checks the basic functions of the client 
+        and answers "thank you", "sorry" and "how are you". """
         self.find_answer_swear_words(text)
         self.find_answer_other_voice_assistants(text)
         self.find_answer_how_to_call_me(text)
@@ -371,7 +383,10 @@ class alex_main_window(QMainWindow):
             self.last_said_text = answer
 
     def main_loop(self):
-        """ This is the main function of the client. This function listens to the user and tries to answer the question. If it can't then it will send the wuestion to the server, wait for the response, read it out loud, and acts if nessicary. """
+        """ This is the main function of the client. 
+        This function listens to the user and tries to answer the question.
+        If it can't then it will send the wuestion to the server, 
+        wait for the response, read it out loud, and acts if nessicary. """
         while True:
             self.did_something = False
             self.speak("waiting")
