@@ -5,7 +5,7 @@ class enc_dec():
         """ The function makes an instance of the class"""
         self.key = None
         self.fernet_object = None
-        self.key_path = "/home/pi/Desktop/yb_project_smart_mirror/key.key"
+        self.key_path = "/home/pi/Desktop/key.key" # change dir if needed
         self.check_if_new_key_needed()
         self.make_fernet_object()
         
@@ -15,12 +15,12 @@ class enc_dec():
         self.key = Fernet.generate_key()
 
     def save_key(self):
-        """ The function saves the generated key to a file called key.key the the location /home/pi/Desktop/yb_project_smart_mirror/key.key """
+        """ The function saves the generated key to a file called key.key the the location /home/pi/Desktop/key.key - change dir if needed """
         with open(self.key_path, 'wb') as f:
             f.write(self.key)
 
     def get_key(self):
-        """ The function gets the encryption key and saves it to self.key from the file key.key located at /home/pi/Desktop/yb_project_smart_mirror/key.key """
+        """ The function gets the encryption key and saves it to self.key from the file key. key located at /home/pi/Desktop/key.key - change dir if needed"""
         with open(self.key_path, 'rb') as f:
             key = f.read()
             self.key = key
