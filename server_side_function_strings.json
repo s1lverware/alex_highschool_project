@@ -86,8 +86,7 @@
     },
     "comment2": "in order to add more contacts pls add the mail you want to SOS_CONTACTS",
     "SOS_CONTACTS": [
-        "taldor2002@gmail.com",
-        "alex.smart.mirror@gmail.com"
+        "insert your contact email"
     ],
     "SOS_STRINGS": [
         "send sos"
