@@ -81,8 +81,8 @@
         "in a while crocodile"
     ],
     "ALEX_CREDENTIALS": {
-        "email_address": "alex.smart.mirror@gmail.com",
-        "email_password": "smart mirror alex1"
+        "email_address": "insert smart assistant email",
+        "email_password": "insert smart assistant password"
     },
     "comment2": "in order to add more contacts pls add the mail you want to SOS_CONTACTS",
     "SOS_CONTACTS": [
