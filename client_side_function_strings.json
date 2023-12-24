@@ -1,0 +1,117 @@
+{
+    "MIC_NAME": "USB Device 0x46d:0x89d: Audio (hw:1,0)",
+    "SWEAR_WORDS": [
+        "fuck",
+        "shit",
+        "motherfucker",
+        "asshole",
+        "cunt"
+    ],
+    "SWEAR_WORDS_ANSWERS": [
+        "I'll not tolerate that kind of language",
+        "Do not speak to me like that",
+        "Don't speak to me like that",
+        "I will not tolerate that kind of language"
+    ],
+    "CALENDAR_STRINGS": [
+        "what do i have",
+        "do i have plans",
+        "am i busy",
+        "am i free",
+        "do i have something planned",
+        "what events do i have"
+    ],
+    "TIME_STRINGS": [
+        "what time is it",
+        "what hour is it",
+        "when are we"
+    ],
+    "DATE_STRINGS": [
+        "what date is it today",
+        "what's the date today",
+        "what is the date today"
+    ],
+    "WAKE_PHRASE": [
+        "hi alex",
+        "hey machine",
+        "hello alex",
+        "hey alex",
+        "are you there alex",
+        "alex are you there",
+        "hey servant",
+        "hello servant"
+    ],
+    "OTHER_VOICE_ASSISTANTS": [
+        "siri",
+        "hey google",
+        "alexa",
+        "jarvis"
+    ],
+    "OTHER_VOICE_ASSISTANTS_RESPONSE": "you have mistaken me for another intelligent assistant.",
+    "JARVIS_RESPONSE": [
+        "I can't build you a superhero suit you know",
+        "What do you want mister Stark?",
+        "Jarvis is busy right now. Do you want Friday?"
+    ],
+    "HOW_TO_CALL_ME": [
+        "what's your name",
+        "how do i call you",
+        "how should i call you",
+        "what is your name"
+    ],
+    "HOW_TO_CALL_ME_RESPONSE": [
+        "you can call me alex.",
+        "my name is alex."
+    ],
+    "FORBIDDEN_SIGNS": [
+        "?",
+        "!",
+        ".",
+        ",",
+        ":"
+    ],
+    "LAST_SAID_STRINGS": [
+        "what's the last thing you said",
+        "can you repeat that",
+        "i didn't understand you",
+        "i did not understand you",
+        "say that again",
+        "what was the last thing you said",
+        "what did you say",
+        "what is the last thing you said"
+    ],
+    "LAST_SAID": "lol + troll = life",
+    "LIGHT_OFF_TEXT_STYLE": "background: black; color: white; border: transparent",
+    "LIGHT_ON_TEXT_STYLE": "background: white; color: black; border: transparent",
+    "LIGHT_ON_TEXT": [
+        "lumos",
+        "turn light on",
+        "turn flashlight on",
+        "lights on",
+        "let there be light"
+    ],
+    "LIGHT_OFF_TEXT": [
+        "nox",
+        "turn light off",
+        "turn flashlight off",
+        "lights off",
+        "lights out"
+    ],
+    "LIGHT_ON_TEXT_TO_SPEAK": [
+        "turning lights on",
+        "turning the lights on",
+        "let there be light"
+    ],
+    "LIGHT_OFF_TEXT_TO_SPEAK": [
+        "turning lights off",
+        "turning the lights off",
+        "it's dark now"
+    ],
+    "EXIT_MESSAGES": [
+        "goodbye master",
+        "i will see you around",
+        "bye",
+        "see you later alligator",
+        "in a while crocodile"
+    ]
+}

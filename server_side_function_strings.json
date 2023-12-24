@@ -1,0 +1,159 @@
+{
+    "KNOWN_JOKES": [
+        "I'm reading a book about anti-gravity. I can't put it down.",
+        "I didn't like my beard at first. Then it grew on me.",
+        "Atheism is a non-prophet organization.",
+        "My dolphin puns are terrible on porpoise.",
+        "Why can't you play poker on the African Savanna? There's too many cheetahs.",
+        "Where do generals keep their armies? In their sleevies!",
+        "What's brown and sticky? A stick.",
+        "A plateau is the highest form of flattery.",
+        "Orions Belt is a huge waist of space.",
+        "A backwards poet writes inverse.",
+        "I was up all night wondering where the sun went, but then it dawned on me.",
+        "To the guy who invented zero: Thanks for nothing!",
+        "Once you've seen one shopping center, you've seen the mall.",
+        "Time flies like an arrow. Fruit flies like a banana.",
+        "Why is it always hot in the corner of a room? Because a corner is 90 degrees.",
+        "Why can't a bicycle stand on its own? It's two-tired.",
+        "How do you find Will Smith in the snow? Look for fresh prints."
+    ],
+    "KNOWN_FACTS": [
+        "my name is Alex",
+        "The United kingdom eats more cans of baked beans than the rest of the world combined.",
+        "On average, a person will spend about five years eating during his or her lifetime.",
+        "Crocodiles swallow stones to help them dive deeper.",
+        "Males sweat 40% more than females.",
+        "The chemicals indole and skatole, which help to account for the particular smell of human feces, are used as ingredients in perfume!",
+        "Jericho is the oldest walled city in the world at 9,000 yrs old!",
+        "At 120 miles per hour, a Formula One car generates so much downforce that it can drive upside down on the roof of a tunnel.",
+        "The MGM Grand Hotel of Las Vegas washes 15,000 pillowcases per day!",
+        "About 39,000 gallons of water are used to produce the average car!",
+        "Forensic scientists can determine a person's sex, age, and race by examining a single strand of hair.",
+        "The New York Stock Exchange started as a coffee shop!",
+        "Nylon is made from coal and petroleum.",
+        "When glass breaks, the cracks move faster than 3,000 miles per hour. To photograph the event, a camera must shoot at a millionth of a second!",
+        "U.S. President Calvin Coolidge liked to eat breakfast while having his head rubbed with vaseline.",
+        " King Kong was Adolf Hitler's favorite movie.",
+        "Napoleon had conquered Italy by the time he was twenty-six.",
+        "It is illegal for tourists to enter Mexico with more than 2 CD's!",
+        "More people have a phobia of frogs than rats.",
+        "An American urologist once bought Napoleon's penis for $40,000.",
+        "Persia changed its name to Iran in 1935.",
+        " A dime has 118 ridges around the edge, a quarter has 119.",
+        "The average single man is one inch shorter than the average married man."
+    ],
+    "I_DIDNT_UNDERSTAND": "I didn't quite get that. Please try again.",
+    "RANDOM_FACT_STRINGS": [
+        "random fact",
+        "something interesting",
+        "something i don't know",
+        "something i do not know"
+    ],
+    "RANDOM_JOKE_STRINGS": [
+        "random joke",
+        "something funny",
+        "improve my mood",
+        "make me happy",
+        "a joke"
+    ],
+    "comment1": "if ALARM_STRINGS is modyfied the code should be changed in order for it to work. for the time, pls leave it be.",
+    "ALARM_STRINGS": [
+        "set an alarm for"
+    ],
+    "EXIT_STRINGS": [
+        "shut down",
+        "shutdown",
+        "end program",
+        "exit",
+        "goodbye",
+        "bye",
+        "leave",
+        "quit",
+        "go commit die",
+        "see you later alligator"
+    ],
+    "EXIT_MESSAGES": [
+        "goodbye master",
+        "i will see you around",
+        "bye",
+        "see you later alligator",
+        "in a while crocodile"
+    ],
+    "ALEX_CREDENTIALS": {
+        "email_address": "alex.smart.mirror@gmail.com",
+        "email_password": "smart mirror alex1"
+    },
+    "comment2": "in order to add more contacts pls add the mail you want to SOS_CONTACTS",
+    "SOS_CONTACTS": [
+        "taldor2002@gmail.com",
+        "alex.smart.mirror@gmail.com"
+    ],
+    "SOS_STRINGS": [
+        "send sos"
+    ],
+    "comment3": "# for the dates function",
+    "MONTHS": [
+        "january",
+        "february",
+        "march",
+        "april",
+        "may",
+        "june",
+        "july",
+        "august",
+        "september",
+        "october",
+        "november",
+        "december"
+    ],
+    "DAYS": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+        "sunday"
+    ],
+    "DAY_EXTENSIONS": [
+        "rd",
+        "th",
+        "st",
+        "nd"
+    ],
+    "CALENDAR_STRINGS": [
+        "what do i have",
+        "do i have plans",
+        "am i busy",
+        "am i free",
+        "do i have something planned",
+        "what events do i have"
+    ],
+    "TIME_STRINGS": [
+        "what time is it",
+        "what hour is it",
+        "when are we",
+        "tell me the time",
+        "tell the time"
+    ],
+    "DATE_STRINGS": [
+        "what date is it today",
+        "what's the date today",
+        "what is the date today",
+        "what day is it"
+    ],
+    "WEATHER_STRINGS": [
+        "what is the weather",
+        "what's the weather",
+        "how is it outside",
+        "is it raining now",
+        "is it sunny now"
+    ],
+    "WHAT_CAN_YOU_DO_STRINGS": [
+        "what can you do",
+        "what are you capable of",
+        "what else can you do"
+    ],
+    "WHAT_CAN_I_DO": "I can tell the time. I can tell you about the weather. I can tell you whats in your calender. I can repeat what I last said. I can tell you jokes and random facts. More features are due to come."
+}
